@@ -12,10 +12,10 @@ namespace empresa{
         }
 
         get anoNasc(){
-            return this._anoNasc
+            return this._anoNasc;
         }
         set anoNasc(anoNasc:number){
-            this._anoNasc = this.anoNasc;
+            this._anoNasc = anoNasc;
         }
 
         public calcularIdade(anoAtual:number){

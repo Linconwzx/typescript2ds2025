@@ -11,6 +11,7 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "live-server": "^1.2.2"
   }
 }

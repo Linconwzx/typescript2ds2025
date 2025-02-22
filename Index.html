@@ -5,11 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Nome: <span id="nome"> </span></h1>
-    <h2>Idade: <span id="Idade"> </span></h2>
-    <h2>Ano: <span id="ano"> </span></h2> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <label for="">Nome: </label>
+                <input type="text" class="form-control" id="campoNome">
+
+                <label for="">Ano Nascimento: </label>
+                <input type="number" class="form-control" id="campoAno">
+
+                <button class="btn btn-primary mt-3" id="calc">Calcular</button>
+            
+            <h1>Nome: <span id="nome"> </span></h1>
+            <h2>Idade: <span id="idade"> </span></h2>
+            <h2>Ano: <span id="ano"> </span></h2>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+
+
     <script src="./js/pessoa.js"></script>
     <script src="./js/main.js"></script>   
 </body>
