@@ -13,7 +13,7 @@ var empresa;
         get saldo() {
             return this._saldo;
         }
-        deposita(valor) {
+        depositar(valor) {
             this._saldo += valor;
         }
         comprar(valorCompra) {

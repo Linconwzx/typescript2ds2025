@@ -16,7 +16,7 @@ namespace empresa{
             return this._saldo;
         }
 
-        public deposita (valor:number){
+        public depositar (valor:number){
             this._saldo += valor;
         }
 

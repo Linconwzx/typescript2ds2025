@@ -29,7 +29,7 @@
         });
         
         btnDeposito.addEventListener("click", ()=>{
-            p.deposita(parseFloat(campoDeposito.value));
+            p.depositar(parseFloat(campoDeposito.value));
             document.getElementById("saldo").textContent = p.saldo.toString();
         });
     

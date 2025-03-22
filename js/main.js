@@ -10,6 +10,7 @@ var empresa;
     let p;
     const campoCompra = document.getElementById("campoCompra");
     const btnComprar = document.getElementById("comprar");
+
     calc.addEventListener("click", () => {
         p = new empresa.Cliente(parseInt(campoCodigo.value));
         p.nome = campoNome.value;
@@ -20,10 +21,12 @@ var empresa;
         document.getElementById("codigo").textContent = p.codigo.toString();
         document.getElementById("saldo").textContent = p.saldo.toString();
     });
+
     btnDeposito.addEventListener("click", () => {
-        p.deposita(parseFloat(campoDeposito.value));
+        p.depositar(parseFloat(campoDeposito.value));
         document.getElementById("saldo").textContent = p.saldo.toString();
     });
+
     btnComprar.addEventListener("click", () => {
         if (p.comprar(parseFloat(campoCompra.value))) {
             alert("Obrigado pela compra");
@@ -33,4 +36,5 @@ var empresa;
         }
         document.getElementById("saldo").textContent = p.saldo.toString();
     });
+    
 })(empresa || (empresa = {}));
